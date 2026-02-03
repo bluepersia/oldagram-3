@@ -37,16 +37,18 @@
         <li class="main-feed__item">
           <article class="post-card">
             <header class="post-card__header">
-              <img
-                src="images/avatar-vangogh.jpg"
-                alt="Portrait of Vincent van Gogh"
-                class="post-card__avatar"
-              />
-              <div class="post-card__user-info">
-                <span class="post-card__user-name">Vincent van Gogh</span>
-                <span class="post-card__user-location"
-                  >Zundert, Netherlands</span
-                >
+              <div class="container post-card__header-inner">
+                <img
+                  src="images/avatar-vangogh.jpg"
+                  alt="Portrait of Vincent van Gogh"
+                  class="post-card__avatar"
+                />
+                <div class="post-card__user-info">
+                  <span class="post-card__user-name">Vincent van Gogh</span>
+                  <span class="post-card__user-location"
+                    >Zundert, Netherlands</span
+                  >
+                </div>
               </div>
             </header>
             <img
@@ -54,39 +56,41 @@
               alt="A portrait of Vincent van Gogh"
               class="post-card__image"
             />
-            <div class="post-card__actions">
-              <button class="post-card__action" aria-label="Like this post">
-                <img
-                  src="images/icon-heart.png"
-                  alt=""
-                  class="post-card__action-icon"
-                />
-              </button>
-              <button
-                class="post-card__action"
-                aria-label="Comment on this post"
-              >
-                <img
-                  src="images/icon-comment.png"
-                  alt=""
-                  class="post-card__action-icon"
-                />
-              </button>
-              <button class="post-card__action" aria-label="Share this post">
-                <img
-                  src="images/icon-share.png"
-                  alt=""
-                  class="post-card__action-icon"
-                />
-              </button>
+            <div class="container post-card__content">
+              <div class="post-card__actions">
+                <button class="post-card__action" aria-label="Like this post">
+                  <img
+                    src="images/icon-heart.png"
+                    alt=""
+                    class="post-card__action-icon"
+                  />
+                </button>
+                <button
+                  class="post-card__action"
+                  aria-label="Comment on this post"
+                >
+                  <img
+                    src="images/icon-comment.png"
+                    alt=""
+                    class="post-card__action-icon"
+                  />
+                </button>
+                <button class="post-card__action" aria-label="Share this post">
+                  <img
+                    src="images/icon-share.png"
+                    alt=""
+                    class="post-card__action-icon"
+                  />
+                </button>
+              </div>
+              <p class="post-card__likes">21,492 likes</p>
+              <p class="post-card__comment">
+                <span class="post-card__comment-author">vincey1853</span>
+                <span class="post-card__comment-text"
+                  >just took a few mushrooms lol</span
+                >
+              </p>
             </div>
-            <p class="post-card__likes">21,492 likes</p>
-            <p class="post-card__comment">
-              <span class="post-card__comment-author">vincey1853</span>
-              <span class="post-card__comment-text"
-                >just took a few mushrooms lol</span
-              >
-            </p>
           </article>
         </li>
       </ul>
