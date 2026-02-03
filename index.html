@@ -12,9 +12,11 @@
       rel="stylesheet"
     />
     <!--CSS-->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/utilities.css" />
     <link rel="stylesheet" href="src/css/blocks/header.css" />
+    <link rel="stylesheet" href="src/css/blocks/main-feed.css" />
+    <link rel="stylesheet" href="src/css/blocks/post-card.css" />
   </head>
   <body>
     <header class="header">
@@ -30,5 +32,76 @@
         />
       </div>
     </header>
+
+    <main class="main-feed">
+      <h2 class="sr-only">Oldagram feed</h2>
+      <ul class="main-feed__list" id="main-feed">
+        <li class="main-feed__item">
+          <article class="post-card">
+            <header class="post-card__header">
+              <div class="container post-card__header-inner">
+                <img
+                  src="images/avatar-vangogh.jpg"
+                  alt="Portrait of Vincent van Gogh"
+                  class="post-card__avatar"
+                />
+                <div class="post-card__user-info">
+                  <h3 class="post-card__user-name">Vincent van Gogh</h3>
+                  <p class="post-card__user-location">Zundert, Netherlands</p>
+                </div>
+              </div>
+            </header>
+            <img
+              src="images/post-vangogh.jpg"
+              alt="A portrait of Vincent van Gogh"
+              class="post-card__image"
+              data-post-img
+            />
+            <div class="container post-card__content">
+              <div class="post-card__actions">
+                <button
+                  class="post-card__action"
+                  aria-label="Like this post"
+                  data-like-btn
+                >
+                  <img
+                    src="images/icon-heart.png"
+                    alt=""
+                    class="post-card__action-icon"
+                  />
+                </button>
+                <button
+                  class="post-card__action"
+                  aria-label="Comment on this post"
+                >
+                  <img
+                    src="images/icon-comment.png"
+                    alt=""
+                    class="post-card__action-icon"
+                  />
+                </button>
+                <button class="post-card__action" aria-label="Share this post">
+                  <img
+                    src="images/icon-dm.png"
+                    alt=""
+                    class="post-card__action-icon"
+                  />
+                </button>
+              </div>
+              <p class="post-card__likes" aria-live="polite" data-like-counter>
+                21,492 likes
+              </p>
+              <p class="post-card__comment">
+                <span class="post-card__comment-author">vincey1853</span>
+                <span class="post-card__comment-text"
+                  >just took a few mushrooms lol</span
+                >
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+    <script src="src/js/index.js" type="module"></script>
   </body>
 </html>
