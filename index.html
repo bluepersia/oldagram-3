@@ -33,7 +33,7 @@
       </div>
     </header>
 
-    <main class="main-feed">
+    <main class="main-feed" id="main-feed">
       <h2 class="sr-only">Oldagram feed</h2>
       <ul class="main-feed__list">
         <li class="main-feed__item">
@@ -55,10 +55,15 @@
               src="images/post-vangogh.jpg"
               alt="A portrait of Vincent van Gogh"
               class="post-card__image"
+              data-post-img
             />
             <div class="container post-card__content">
               <div class="post-card__actions">
-                <button class="post-card__action" aria-label="Like this post">
+                <button
+                  class="post-card__action"
+                  aria-label="Like this post"
+                  data-like-btn
+                >
                   <img
                     src="images/icon-heart.png"
                     alt=""
@@ -83,7 +88,9 @@
                   />
                 </button>
               </div>
-              <p class="post-card__likes" aria-live="polite">21,492 likes</p>
+              <p class="post-card__likes" aria-live="polite" data-like-counter>
+                21,492 likes
+              </p>
               <p class="post-card__comment">
                 <span class="post-card__comment-author">vincey1853</span>
                 <span class="post-card__comment-text"
@@ -95,5 +102,6 @@
         </li>
       </ul>
     </main>
+    <script src="src/js/index.js" type="module"></script>
   </body>
 </html>
